@@ -161,7 +161,7 @@ class Me():
     """Object represetnting current user.
     """
     _userinfo_regex = re.compile(r'window.current_user_attributes = ({.*})')
-    _userinfo_regex_2 = re.compile(r'gon.user=({.*});gon.preloads')
+    _userinfo_regex_2 = re.compile(r'gon.user=({.*});gon.appConfig')
 
     def __init__(self, connection):
         self._connection = connection
